@@ -1,0 +1,118 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src",
+    "dependencies": [
+      "munch==2.5.0",
+      "numpy==1.21.6",
+      "PyYAML==5.3.1",
+      "sacred==0.8.2",
+      "torch==1.13.1"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarl",
+    "repositories": [
+      {
+        "commit": "4b743a8e038e5e6953b018d99ca00c07e612a2f0",
+        "dirty": true,
+        "url": "https://github.com/uoe-agents/epymarl.git"
+      },
+      {
+        "commit": "4b743a8e038e5e6953b018d99ca00c07e612a2f0",
+        "dirty": true,
+        "url": "https://github.com/uoe-agents/epymarl.git"
+      },
+      {
+        "commit": "4b743a8e038e5e6953b018d99ca00c07e612a2f0",
+        "dirty": true,
+        "url": "https://github.com/uoe-agents/epymarl.git"
+      }
+    ],
+    "sources": [
+      [
+        "main.py",
+        "_sources/main_10bb275063c412d8d7ce9641d9c0d4b0.py"
+      ],
+      [
+        "run.py",
+        "_sources/run_833ab61c2e1a108bc89eeeda35b281bd.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_7799699b534f806632c1d618a6ef7e02.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"src/main.py\", line 36, in my_main\n    run(_run, config, _log)\n",
+    "  File \"/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py\", line 66, in run\n    run_sequential(args=args, logger=logger, run=run)\n",
+    "  File \"/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py\", line 220, in run_sequential\n    runner.run(lbf_features=DR_args, test_mode=True)\n",
+    "  File \"/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/runners/episode_runner.py\", line 54, in run\n    self.reset(lbf_features=lbf_features)\n",
+    "  File \"/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/runners/episode_runner.py\", line 46, in reset\n    self.env.reset(lbf_features=lbf_features)\n",
+    "  File \"/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/envs/__init__.py\", line 175, in reset\n    self._obs = self._env.reset2(lbf_features)\n",
+    "  File \"/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/core.py\", line 238, in __getattr__\n    return getattr(self.env, name)\n",
+    "  File \"/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/core.py\", line 238, in __getattr__\n    return getattr(self.env, name)\n",
+    "  File \"/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/core.py\", line 238, in __getattr__\n    return getattr(self.env, name)\n",
+    "AttributeError: 'ForagingEnv' object has no attribute 'reset2'\n"
+  ],
+  "heartbeat": "2024-05-14T01:03:17.397575",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz",
+    "gpus": {
+      "driver_version": "550.54.14",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce GTX TITAN X",
+          "persistence_mode": false,
+          "total_memory": 12288
+        }
+      ]
+    },
+    "hostname": "legacygpu07.umiacs.umd.edu",
+    "os": [
+      "Linux",
+      "Linux-4.18.0-513.24.1.el8_9.x86_64-x86_64-with-redhat-8.9-Ootpa"
+    ],
+    "python_version": "3.7.16"
+  },
+  "meta": {
+    "command": "my_main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.time_limit=50",
+        "env_args.key=lbforaging:Foraging-8x8-3p-3f-v2"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2024-05-14T01:03:04.935178",
+  "status": "FAILED",
+  "stop_time": "2024-05-14T01:03:17.407433"
+}

@@ -1,0 +1,12 @@
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:184: UserWarning: tee_stdout.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stdout.wait timeout. Forcibly terminating.")
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:190: UserWarning: tee_stderr.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stderr.wait timeout. Forcibly terminating.")
+[DEBUG 16:41:22] pymarl Stopping Heartbeat
+[ERROR 16:41:22] pymarl Failed after 0:00:12!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "src/main.py", line 36, in my_main
+    run(_run, config, _log)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py", line 66, in run
+    run_sequential(args=args, logger=logger, run=run)
+TypeError: run_sequential() got an unexpected keyword argument 'run'

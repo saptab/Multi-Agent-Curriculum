@@ -1,0 +1,210 @@
+wandb_version: 1
+
+runner:
+  desc: null
+  value: episode
+mac:
+  desc: null
+  value: basic_mac
+env:
+  desc: null
+  value: gymma
+env_args:
+  desc: null
+  value:
+    key: lbforaging:Foraging-8x8-3p-3f-v2
+    time_limit: 50
+    pretrained_wrapper: null
+    seed: 831365886
+batch_size_run:
+  desc: null
+  value: 1
+test_nepisode:
+  desc: null
+  value: 100
+test_interval:
+  desc: null
+  value: 50000
+test_greedy:
+  desc: null
+  value: true
+log_interval:
+  desc: null
+  value: 50000
+runner_log_interval:
+  desc: null
+  value: 10000
+learner_log_interval:
+  desc: null
+  value: 10000
+t_max:
+  desc: null
+  value: 2050000
+use_cuda:
+  desc: null
+  value: true
+buffer_cpu_only:
+  desc: null
+  value: true
+use_tensorboard:
+  desc: null
+  value: false
+save_model:
+  desc: null
+  value: false
+save_model_interval:
+  desc: null
+  value: 50000
+checkpoint_path:
+  desc: null
+  value: ''
+evaluate:
+  desc: null
+  value: false
+render:
+  desc: null
+  value: false
+load_step:
+  desc: null
+  value: 0
+save_replay:
+  desc: null
+  value: false
+local_results_path:
+  desc: null
+  value: results
+gamma:
+  desc: null
+  value: 0.99
+batch_size:
+  desc: null
+  value: 32
+buffer_size:
+  desc: null
+  value: 5000
+lr:
+  desc: null
+  value: 0.0005
+optim_alpha:
+  desc: null
+  value: 0.99
+optim_eps:
+  desc: null
+  value: 1.0e-05
+grad_norm_clip:
+  desc: null
+  value: 10
+add_value_last_step:
+  desc: null
+  value: true
+agent:
+  desc: null
+  value: rnn
+hidden_dim:
+  desc: null
+  value: 64
+obs_agent_id:
+  desc: null
+  value: true
+obs_last_action:
+  desc: null
+  value: false
+repeat_id:
+  desc: null
+  value: 1
+label:
+  desc: null
+  value: default_label
+hypergroup:
+  desc: null
+  value: null
+action_selector:
+  desc: null
+  value: epsilon_greedy
+epsilon_start:
+  desc: null
+  value: 1.0
+epsilon_finish:
+  desc: null
+  value: 0.05
+epsilon_anneal_time:
+  desc: null
+  value: 50000
+evaluation_epsilon:
+  desc: null
+  value: 0.0
+target_update_interval_or_tau:
+  desc: null
+  value: 200
+obs_individual_obs:
+  desc: null
+  value: false
+standardise_returns:
+  desc: null
+  value: false
+standardise_rewards:
+  desc: null
+  value: true
+agent_output_type:
+  desc: null
+  value: q
+learner:
+  desc: null
+  value: q_learner
+double_q:
+  desc: null
+  value: true
+mixer:
+  desc: null
+  value: qmix
+use_rnn:
+  desc: null
+  value: false
+mixing_embed_dim:
+  desc: null
+  value: 32
+hypernet_layers:
+  desc: null
+  value: 2
+hypernet_embed:
+  desc: null
+  value: 64
+name:
+  desc: null
+  value: qmix
+seed:
+  desc: null
+  value: 831365886
+device:
+  desc: null
+  value: cuda
+unique_token:
+  desc: null
+  value: qmix_seed831365886_lbforaging:Foraging-8x8-3p-3f-v2_2024-05-13 16:41:09.604124
+_wandb:
+  desc: null
+  value:
+    python_version: 3.7.16
+    cli_version: 0.17.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1715632871
+    t:
+      1:
+      - 1
+      - 52
+      - 55
+      2:
+      - 1
+      - 52
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.7.16
+      5: 0.17.0
+      8:
+      - 5
+      13: linux-x86_64

@@ -1,0 +1,99 @@
+[DEBUG 22:05:30] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=<valid stream>, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=<valid stream>, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:30] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=<valid stream>, shell=False, universal_newlines=False)
+src/main.py:58: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  if isinstance(v, collections.Mapping):
+[INFO 22:05:30] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 22:05:31] pymarl Using capture mode "fd"
+[INFO 22:05:31] pymarl Running command 'my_main'
+[INFO 22:05:31] pymarl Started run with ID "7"
+[DEBUG 22:05:31] pymarl Starting Heartbeat
+[DEBUG 22:05:31] my_main Started
+[INFO 22:05:31] my_main Experiment Parameters:
+[INFO 22:05:31] my_main 
+
+{   'action_selector': 'soft_policies',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'pi_logits',
+    'batch_size': 10,
+    'batch_size_run': 10,
+    'buffer_cpu_only': True,
+    'buffer_size': 10,
+    'checkpoint_path': '',
+    'critic_type': 'cv_critic',
+    'entropy_coef': 0.01,
+    'env': 'gymma',
+    'env_args': {   'key': 'lbforaging:Foraging-8x8-3p-3f-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 487180245,
+                    'time_limit': 50},
+    'epochs': 4,
+    'eps_clip': 0.2,
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'label': 'default_label',
+    'learner': 'ppo_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 50000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mask_before_softmax': True,
+    'name': 'mappo',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'q_nstep': 5,
+    'render': False,
+    'repeat_id': 1,
+    'runner': 'parallel',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 487180245,
+    'standardise_returns': False,
+    'standardise_rewards': False,
+    't_max': 20050000,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 50000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_rnn': False,
+    'use_tensorboard': False}
+
+[DEBUG 22:05:31] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:31] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:05:33] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 22:05:33] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 22:05:33] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab (multi-agent-ai). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /nfshomes/saptab1/.netrc
+[DEBUG 22:05:33] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 22:05:33] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 22:05:33] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab. Use `wandb login --relogin` to force relogin
+[DEBUG 22:05:33] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=<valid stream>, shell=False, universal_newlines=False)
+wandb: Tracking run with wandb version 0.17.0
+wandb: Run data is saved locally in /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_220533-exjn0vrw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mappo-gymma
+wandb: ⭐️ View project at https://wandb.ai/saptab/coalition-ai-agents
+wandb: 🚀 View run at https://wandb.ai/saptab/coalition-ai-agents/runs/exjn0vrw
+[INFO 22:05:42] my_main Beginning training for 20050000 timesteps
+[INFO 22:05:48] my_main t_env: 0 / 20050000
+[INFO 22:05:48] my_main Estimated time left: 40 minutes, 14 seconds. Time passed: 6 seconds

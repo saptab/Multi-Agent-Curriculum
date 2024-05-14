@@ -1,0 +1,15 @@
+[INFO 21:52:55] my_main Beginning training for 20050000 timesteps
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:184: UserWarning: tee_stdout.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stdout.wait timeout. Forcibly terminating.")
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:190: UserWarning: tee_stderr.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stderr.wait timeout. Forcibly terminating.")
+[DEBUG 21:52:57] pymarl Stopping Heartbeat
+[ERROR 21:52:57] pymarl Failed after 0:00:21!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "src/main.py", line 36, in my_main
+    run(_run, config, _log)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py", line 66, in run
+    run_sequential(args=args, logger=logger, run=run)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py", line 220, in run_sequential
+    runner.run(lbf_features=DR_args, test_mode=True)
+TypeError: run() got an unexpected keyword argument 'lbf_features'

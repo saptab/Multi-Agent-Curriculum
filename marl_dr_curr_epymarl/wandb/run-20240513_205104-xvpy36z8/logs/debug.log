@@ -1,0 +1,28 @@
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Configure stats pid to 2749903
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Loading settings from /nfshomes/saptab1/.config/wandb/settings
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Loading settings from /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/settings
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/main.py', 'program_abspath': '/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/main.py', 'program': 'src/main.py'}
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-05-13 20:51:04,218 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-05-13 20:51:04,219 INFO    MainThread:2749903 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-13 20:51:04,219 INFO    MainThread:2749903 [wandb_init.py:_log_setup():520] Logging user logs to /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_205104-xvpy36z8/logs/debug.log
+2024-05-13 20:51:04,219 INFO    MainThread:2749903 [wandb_init.py:_log_setup():521] Logging internal logs to /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_205104-xvpy36z8/logs/debug-internal.log
+2024-05-13 20:51:04,219 INFO    MainThread:2749903 [wandb_init.py:init():560] calling init triggers
+2024-05-13 20:51:04,219 INFO    MainThread:2749903 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'runner': 'parallel', 'mac': 'basic_mac', 'env': 'gymma', 'env_args': {'key': 'lbforaging:Foraging-8x8-3p-3f-v2', 'time_limit': 50, 'pretrained_wrapper': None, 'seed': 264026544}, 'batch_size_run': 10, 'test_nepisode': 100, 'test_interval': 50000, 'test_greedy': True, 'log_interval': 50000, 'runner_log_interval': 10000, 'learner_log_interval': 10000, 't_max': 20050000, 'use_cuda': True, 'buffer_cpu_only': True, 'use_tensorboard': False, 'save_model': False, 'save_model_interval': 50000, 'checkpoint_path': '', 'evaluate': False, 'render': False, 'load_step': 0, 'save_replay': False, 'local_results_path': 'results', 'gamma': 0.99, 'batch_size': 10, 'buffer_size': 10, 'lr': 0.0005, 'optim_alpha': 0.99, 'optim_eps': 1e-05, 'grad_norm_clip': 10, 'add_value_last_step': True, 'agent': 'rnn', 'hidden_dim': 64, 'obs_agent_id': True, 'obs_last_action': False, 'repeat_id': 1, 'label': 'default_label', 'hypergroup': None, 'action_selector': 'soft_policies', 'mask_before_softmax': True, 'target_update_interval_or_tau': 200, 'obs_individual_obs': False, 'agent_output_type': 'pi_logits', 'learner': 'ppo_learner', 'entropy_coef': 0.01, 'use_rnn': False, 'standardise_returns': False, 'standardise_rewards': False, 'q_nstep': 5, 'critic_type': 'cv_critic', 'epochs': 4, 'eps_clip': 0.2, 'name': 'mappo', 'seed': 264026544, 'device': 'cuda', 'unique_token': 'mappo_seed264026544_lbforaging:Foraging-8x8-3p-3f-v2_2024-05-13 20:51:02.328094'}
+2024-05-13 20:51:04,219 INFO    MainThread:2749903 [wandb_init.py:init():610] starting backend
+2024-05-13 20:51:04,219 INFO    MainThread:2749903 [wandb_init.py:init():614] setting up manager
+2024-05-13 20:51:04,235 INFO    MainThread:2749903 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-13 20:51:04,237 INFO    MainThread:2749903 [wandb_init.py:init():622] backend started and connected
+2024-05-13 20:51:04,267 INFO    MainThread:2749903 [wandb_init.py:init():711] updated telemetry
+2024-05-13 20:51:04,296 INFO    MainThread:2749903 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-13 20:51:04,573 INFO    MainThread:2749903 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-13 20:51:04,623 INFO    MainThread:2749903 [wandb_run.py:_on_init():2405] got version response 
+2024-05-13 20:51:04,623 INFO    MainThread:2749903 [wandb_init.py:init():795] starting run threads in backend
+2024-05-13 20:51:10,696 INFO    MainThread:2749903 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-13 20:51:10,696 INFO    MainThread:2749903 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-13 20:51:10,696 INFO    MainThread:2749903 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-13 20:51:10,697 INFO    MainThread:2749903 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-13 20:51:10,699 INFO    MainThread:2749903 [wandb_init.py:init():838] run started, returning control to user process

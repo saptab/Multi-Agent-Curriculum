@@ -1,0 +1,214 @@
+{
+    "os": "Linux-4.18.0-513.24.1.el8_9.x86_64-x86_64-with-redhat-8.9-Ootpa",
+    "python": "3.7.16",
+    "heartbeatAt": "2024-05-14T01:31:22.359898",
+    "startedAt": "2024-05-14T01:31:21.813097",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config=mappo",
+        "--env-config=gymma",
+        "with",
+        "env_args.time_limit=50",
+        "env_args.key=lbforaging:Foraging-8x8-3p-3f-v2"
+    ],
+    "state": "running",
+    "program": "src/main.py",
+    "codePathLocal": "src/main.py",
+    "codePath": "src/main.py",
+    "git": {
+        "remote": "https://github.com/uoe-agents/epymarl.git",
+        "commit": "4b743a8e038e5e6953b018d99ca00c07e612a2f0"
+    },
+    "email": null,
+    "root": "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl",
+    "host": "vulcan09.umiacs.umd.edu",
+    "username": "saptab1",
+    "executable": "/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/bin/python3",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2965.366375,
+        "min": 3000.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2638.159,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2698.069,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2599.807,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2599.808,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2599.808,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2599.807,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2581.669,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2728.058,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 39.043426513671875,
+            "used": 12.267314910888672
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 251.26466369628906
+    }
+}

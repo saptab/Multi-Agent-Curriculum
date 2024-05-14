@@ -1,0 +1,154 @@
+{
+    "os": "Linux-4.18.0-513.24.1.el8_9.x86_64-x86_64-with-redhat-8.9-Ootpa",
+    "python": "3.7.16",
+    "heartbeatAt": "2024-05-14T01:03:07.341202",
+    "startedAt": "2024-05-14T01:03:06.801246",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config=iql",
+        "--env-config=gymma",
+        "with",
+        "env_args.time_limit=50",
+        "env_args.key=lbforaging:Foraging-8x8-3p-3f-v2"
+    ],
+    "state": "running",
+    "program": "src/main.py",
+    "codePathLocal": "src/main.py",
+    "codePath": "src/main.py",
+    "git": {
+        "remote": "https://github.com/uoe-agents/epymarl.git",
+        "commit": "4b743a8e038e5e6953b018d99ca00c07e612a2f0"
+    },
+    "email": null,
+    "root": "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl",
+    "host": "legacygpu07.umiacs.umd.edu",
+    "username": "saptab1",
+    "executable": "/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/bin/python3",
+    "cpu_count": 20,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2976.59025,
+        "min": 3000.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2747.155,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 39.043426513671875,
+            "used": 11.435604095458984
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX TITAN X",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX TITAN X",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 251.25542449951172
+    }
+}

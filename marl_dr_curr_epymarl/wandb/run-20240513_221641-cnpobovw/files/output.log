@@ -1,0 +1,4 @@
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/spaces/box.py:74: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  "Box bound precision lowered by casting to {}".format(self.dtype)
+[INFO 22:16:52] my_main Beginning training for 2050000 timesteps
+[INFO 22:16:54] my_main t_env: 0 / 2050000

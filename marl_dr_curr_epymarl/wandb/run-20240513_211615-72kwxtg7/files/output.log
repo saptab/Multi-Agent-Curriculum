@@ -1,0 +1,21 @@
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/spaces/box.py:74: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  "Box bound precision lowered by casting to {}".format(self.dtype)
+[INFO 21:16:24] my_main Beginning training for 2050000 timesteps
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:184: UserWarning: tee_stdout.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stdout.wait timeout. Forcibly terminating.")
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:190: UserWarning: tee_stderr.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stderr.wait timeout. Forcibly terminating.")
+[DEBUG 21:16:29] pymarl Stopping Heartbeat
+[ERROR 21:16:29] pymarl Failed after 0:00:15!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "src/main.py", line 36, in my_main
+    run(_run, config, _log)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py", line 66, in run
+    run_sequential(args=args, logger=logger, run=run)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py", line 220, in run_sequential
+    runner.run(lbf_features=DR_args, test_mode=True)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/runners/episode_runner.py", line 119, in run
+    self._log(cur_returns, cur_stats, log_prefix)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/runners/episode_runner.py", line 139, in _log
+    self.run_wandb.log(wandb_stats)
+AttributeError: 'EpisodeRunner' object has no attribute 'run_wandb'

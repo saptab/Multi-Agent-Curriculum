@@ -1,0 +1,85 @@
+[INFO 16:49:00] pymarl Running command 'my_main'
+[INFO 16:49:00] pymarl Started run with ID "1"
+[DEBUG 16:49:00] pymarl Starting Heartbeat
+[DEBUG 16:49:00] my_main Started
+[INFO 16:49:00] my_main Experiment Parameters:
+[INFO 16:49:00] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'double_q': True,
+    'env': 'gymma',
+    'env_args': {   'key': 'lbforaging:Foraging-8x8-3p-3f-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 299558476,
+                    'time_limit': 50},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 50000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'render': False,
+    'repeat_id': 1,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 299558476,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 2050000,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 50000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_rnn': False,
+    'use_tensorboard': False}
+
+[DEBUG 16:49:00] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 16:49:00] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 16:49:01] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 16:49:01] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 16:49:02] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab (multi-agent-ai). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /nfshomes/saptab1/.netrc
+[DEBUG 16:49:02] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 16:49:02] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 16:49:02] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab. Use `wandb login --relogin` to force relogin
+[DEBUG 16:49:02] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=<valid stream>, shell=False, universal_newlines=False)
+wandb: Tracking run with wandb version 0.17.0
+wandb: Run data is saved locally in /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_164902-riguedpc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run iql-gymma
+wandb: ⭐️ View project at https://wandb.ai/saptab/coalition-ai-agents
+wandb: 🚀 View run at https://wandb.ai/saptab/coalition-ai-agents/runs/riguedpc
+-----CONFIG----- {'runner': 'episode', 'mac': 'basic_mac', 'env': 'gymma', 'env_args': {'key': 'lbforaging:Foraging-8x8-3p-3f-v2', 'time_limit': 50, 'pretrained_wrapper': None, 'seed': 299558476}, 'batch_size_run': 1, 'test_nepisode': 100, 'test_interval': 50000, 'test_greedy': True, 'log_interval': 50000, 'runner_log_interval': 10000, 'learner_log_interval': 10000, 't_max': 2050000, 'use_cuda': True, 'buffer_cpu_only': True, 'use_tensorboard': False, 'save_model': False, 'save_model_interval': 50000, 'checkpoint_path': '', 'evaluate': False, 'render': False, 'load_step': 0, 'save_replay': False, 'local_results_path': 'results', 'gamma': 0.99, 'batch_size': 32, 'buffer_size': 5000, 'lr': 0.0005, 'optim_alpha': 0.99, 'optim_eps': 1e-05, 'grad_norm_clip': 10, 'add_value_last_step': True, 'agent': 'rnn', 'hidden_dim': 64, 'obs_agent_id': True, 'obs_last_action': False, 'repeat_id': 1, 'label': 'default_label', 'hypergroup': None, 'action_selector': 'epsilon_greedy', 'epsilon_start': 1.0, 'epsilon_finish': 0.05, 'epsilon_anneal_time': 50000, 'evaluation_epsilon': 0.0, 'target_update_interval_or_tau': 200, 'obs_individual_obs': False, 'agent_output_type': 'q', 'learner': 'q_learner', 'standardise_returns': False, 'standardise_rewards': True, 'double_q': True, 'use_rnn': False, 'mixer': None, 'name': 'iql', 'seed': 299558476}
+-----END-------

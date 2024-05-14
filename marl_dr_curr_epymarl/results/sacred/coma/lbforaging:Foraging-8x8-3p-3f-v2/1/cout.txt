@@ -1,0 +1,90 @@
+[INFO 22:16:39] pymarl Running command 'my_main'
+[INFO 22:16:39] pymarl Started run with ID "1"
+[DEBUG 22:16:39] pymarl Starting Heartbeat
+[DEBUG 22:16:39] my_main Started
+[INFO 22:16:39] my_main Experiment Parameters:
+[INFO 22:16:39] my_main 
+
+{   'action_selector': 'soft_policies',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'pi_logits',
+    'batch_size': 10,
+    'batch_size_run': 10,
+    'buffer_cpu_only': True,
+    'buffer_size': 10,
+    'checkpoint_path': '',
+    'critic_baseline_fn': 'coma',
+    'critic_q_fn': 'coma',
+    'critic_train_mode': 'seq',
+    'critic_train_reps': 1,
+    'critic_type': 'coma_critic',
+    'entropy_coef': 0.001,
+    'env': 'gymma',
+    'env_args': {   'key': 'lbforaging:Foraging-8x8-3p-3f-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 929106519,
+                    'time_limit': 50},
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'label': 'default_label',
+    'learner': 'coma_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 50000,
+    'lr': 0.0003,
+    'mac': 'basic_mac',
+    'mask_before_softmax': True,
+    'name': 'coma',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'q_nstep': 10,
+    'render': False,
+    'repeat_id': 1,
+    'runner': 'parallel',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 929106519,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 20050000,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 50000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_tensorboard': False}
+
+[DEBUG 22:16:39] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:16:39] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 22:16:41] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 22:16:41] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 22:16:41] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab (multi-agent-ai). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /nfshomes/saptab1/.netrc
+[DEBUG 22:16:41] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 22:16:41] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 22:16:41] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab. Use `wandb login --relogin` to force relogin
+[DEBUG 22:16:41] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=<valid stream>, shell=False, universal_newlines=False)
+wandb: Tracking run with wandb version 0.17.0
+wandb: Run data is saved locally in /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221641-zga4xu92
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run coma-gymma
+wandb: ⭐️ View project at https://wandb.ai/saptab/coalition-ai-agents
+wandb: 🚀 View run at https://wandb.ai/saptab/coalition-ai-agents/runs/zga4xu92
+-----CONFIG----- {'runner': 'parallel', 'mac': 'basic_mac', 'env': 'gymma', 'env_args': {'key': 'lbforaging:Foraging-8x8-3p-3f-v2', 'time_limit': 50, 'pretrained_wrapper': None, 'seed': 929106519}, 'batch_size_run': 10, 'test_nepisode': 100, 'test_interval': 50000, 'test_greedy': True, 'log_interval': 50000, 'runner_log_interval': 10000, 'learner_log_interval': 10000, 't_max': 20050000, 'use_cuda': True, 'buffer_cpu_only': True, 'use_tensorboard': False, 'save_model': False, 'save_model_interval': 50000, 'checkpoint_path': '', 'evaluate': False, 'render': False, 'load_step': 0, 'save_replay': False, 'local_results_path': 'results', 'gamma': 0.99, 'batch_size': 10, 'buffer_size': 10, 'lr': 0.0003, 'optim_alpha': 0.99, 'optim_eps': 1e-05, 'grad_norm_clip': 10, 'add_value_last_step': True, 'agent': 'rnn', 'hidden_dim': 64, 'obs_agent_id': True, 'obs_last_action': False, 'repeat_id': 1, 'label': 'default_label', 'hypergroup': None, 'action_selector': 'soft_policies', 'mask_before_softmax': True, 'target_update_interval_or_tau': 200, 'obs_individual_obs': False, 'agent_output_type': 'pi_logits', 'learner': 'coma_learner', 'critic_q_fn': 'coma', 'standardise_returns': False, 'standardise_rewards': True, 'use_rnn': True, 'critic_baseline_fn': 'coma', 'critic_train_mode': 'seq', 'critic_train_reps': 1, 'entropy_coef': 0.001, 'q_nstep': 10, 'critic_type': 'coma_critic', 'name': 'coma', 'seed': 929106519}
+-----END-------
+[INFO 22:16:54] my_main Beginning training for 20050000 timesteps
+[INFO 22:16:56] my_main t_env: 0 / 20050000
+[INFO 22:16:56] my_main Estimated time left: 15 minutes, 47 seconds. Time passed: 2 seconds

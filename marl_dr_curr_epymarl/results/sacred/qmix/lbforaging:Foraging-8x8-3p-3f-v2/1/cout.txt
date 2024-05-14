@@ -1,0 +1,80 @@
+[INFO 16:41:09] pymarl Running command 'my_main'
+[INFO 16:41:09] pymarl Started run with ID "1"
+[DEBUG 16:41:09] pymarl Starting Heartbeat
+[DEBUG 16:41:09] my_main Started
+[INFO 16:41:09] my_main Experiment Parameters:
+[INFO 16:41:09] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'double_q': True,
+    'env': 'gymma',
+    'env_args': {   'key': 'lbforaging:Foraging-8x8-3p-3f-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 831365886,
+                    'time_limit': 50},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 50000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'render': False,
+    'repeat_id': 1,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 831365886,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 2050000,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 50000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_rnn': False,
+    'use_tensorboard': False}
+
+[DEBUG 16:41:09] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 16:41:09] git.cmd Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 16:41:11] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 16:41:11] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 16:41:11] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab (multi-agent-ai). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /nfshomes/saptab1/.netrc
+[DEBUG 16:41:11] urllib3.connectionpool Starting new HTTPS connection (1): api.wandb.ai:443
+[DEBUG 16:41:11] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+[DEBUG 16:41:11] urllib3.connectionpool https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+wandb: Currently logged in as: saptab. Use `wandb login --relogin` to force relogin
+[DEBUG 16:41:11] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl, stdin=<valid stream>, shell=False, universal_newlines=False)

@@ -1,0 +1,29 @@
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/spaces/box.py:74: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  "Box bound precision lowered by casting to {}".format(self.dtype)
+[INFO 21:03:15] my_main Beginning training for 2050000 timesteps
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:184: UserWarning: tee_stdout.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stdout.wait timeout. Forcibly terminating.")
+/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/sacred/stdout_capturing.py:190: UserWarning: tee_stderr.wait timeout. Forcibly terminating.
+  warnings.warn("tee_stderr.wait timeout. Forcibly terminating.")
+[DEBUG 21:03:17] pymarl Stopping Heartbeat
+[ERROR 21:03:17] pymarl Failed after 0:00:12!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "src/main.py", line 36, in my_main
+    run(_run, config, _log)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py", line 66, in run
+    run_sequential(args=args, logger=logger, run=run)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/run.py", line 220, in run_sequential
+    runner.run(lbf_features=DR_args, test_mode=True)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/runners/episode_runner.py", line 54, in run
+    self.reset(lbf_features=lbf_features)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/runners/episode_runner.py", line 46, in reset
+    self.env.reset(lbf_features=lbf_features)
+  File "/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/src/envs/__init__.py", line 175, in reset
+    self._obs = self._env.reset2(lbf_features)
+  File "/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/core.py", line 238, in __getattr__
+    return getattr(self.env, name)
+  File "/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/core.py", line 238, in __getattr__
+    return getattr(self.env, name)
+  File "/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/lib/python3.7/site-packages/gym/core.py", line 238, in __getattr__
+    return getattr(self.env, name)
+AttributeError: 'ForagingEnv' object has no attribute 'reset2'

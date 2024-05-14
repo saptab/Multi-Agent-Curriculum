@@ -1,0 +1,1505 @@
+2024-05-13 22:10:35,275 INFO    StreamThr :2753781 [internal.py:wandb_internal():88] W&B internal server running at pid: 2753781, started at: 2024-05-13 22:10:35.258674
+2024-05-13 22:10:35,277 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status
+2024-05-13 22:10:35,288 INFO    WriterThread:2753781 [datastore.py:open_for_write():87] open: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/run-pukqxbnb.wandb
+2024-05-13 22:10:35,292 DEBUG   SenderThread:2753781 [sender.py:send():378] send: header
+2024-05-13 22:10:35,335 DEBUG   SenderThread:2753781 [sender.py:send():378] send: run
+2024-05-13 22:10:35,605 INFO    SenderThread:2753781 [dir_watcher.py:__init__():211] watching files in: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files
+2024-05-13 22:10:35,605 INFO    SenderThread:2753781 [sender.py:_start_run_threads():1126] run started: pukqxbnb with start time 1715652635.264267
+2024-05-13 22:10:35,625 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: check_version
+2024-05-13 22:10:35,625 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: check_version
+2024-05-13 22:10:35,727 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: run_start
+2024-05-13 22:10:35,763 DEBUG   HandlerThread:2753781 [system_info.py:__init__():26] System info init
+2024-05-13 22:10:35,763 DEBUG   HandlerThread:2753781 [system_info.py:__init__():41] System info init done
+2024-05-13 22:10:35,763 INFO    HandlerThread:2753781 [system_monitor.py:start():194] Starting system monitor
+2024-05-13 22:10:35,763 INFO    SystemMonitor:2753781 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-13 22:10:35,764 INFO    HandlerThread:2753781 [system_monitor.py:probe():214] Collecting system info
+2024-05-13 22:10:35,765 INFO    SystemMonitor:2753781 [interfaces.py:start():188] Started cpu monitoring
+2024-05-13 22:10:35,765 INFO    SystemMonitor:2753781 [interfaces.py:start():188] Started disk monitoring
+2024-05-13 22:10:35,766 INFO    SystemMonitor:2753781 [interfaces.py:start():188] Started gpu monitoring
+2024-05-13 22:10:35,767 INFO    SystemMonitor:2753781 [interfaces.py:start():188] Started memory monitoring
+2024-05-13 22:10:35,768 INFO    SystemMonitor:2753781 [interfaces.py:start():188] Started network monitoring
+2024-05-13 22:10:35,802 DEBUG   HandlerThread:2753781 [system_info.py:probe():150] Probing system
+2024-05-13 22:10:35,823 DEBUG   HandlerThread:2753781 [system_info.py:_probe_git():135] Probing git
+2024-05-13 22:10:35,856 DEBUG   HandlerThread:2753781 [system_info.py:_probe_git():143] Probing git done
+2024-05-13 22:10:35,856 DEBUG   HandlerThread:2753781 [system_info.py:probe():198] Probing system done
+2024-05-13 22:10:35,856 DEBUG   HandlerThread:2753781 [system_monitor.py:probe():223] {'os': 'Linux-4.18.0-513.24.1.el8_9.x86_64-x86_64-with-redhat-8.9-Ootpa', 'python': '3.7.16', 'heartbeatAt': '2024-05-14T02:10:35.803072', 'startedAt': '2024-05-14T02:10:35.096112', 'docker': None, 'cuda': None, 'args': ('--config=maddpg', '--env-config=gymma', 'with', 'env_args.time_limit=50', 'env_args.key=lbforaging:Foraging-8x8-3p-3f-v2'), 'state': 'running', 'program': 'src/main.py', 'codePathLocal': 'src/main.py', 'codePath': 'src/main.py', 'git': {'remote': 'https://github.com/uoe-agents/epymarl.git', 'commit': '4b743a8e038e5e6953b018d99ca00c07e612a2f0'}, 'email': None, 'root': '/fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl', 'host': 'legacygpu07.umiacs.umd.edu', 'username': 'saptab1', 'executable': '/fs/cml-projects/MARL/saptab1/anaconda3/envs/marl_cc/bin/python3', 'cpu_count': 20, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2924.25215, 'min': 3000.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 2742.387, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 2937.693, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}, {'current': 3000.0, 'min': 3000.0, 'max': 3000.0}], 'disk': {'/': {'total': 39.043426513671875, 'used': 11.436145782470703}}, 'gpu': 'NVIDIA GeForce GTX TITAN X', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}], 'memory': {'total': 251.25542449951172}}
+2024-05-13 22:10:35,856 INFO    HandlerThread:2753781 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-13 22:10:35,856 INFO    HandlerThread:2753781 [system_monitor.py:probe():227] Publishing system info
+2024-05-13 22:10:35,856 DEBUG   HandlerThread:2753781 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-05-13 22:10:36,608 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_created():271] file/dir created: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/conda-environment.yaml
+2024-05-13 22:10:41,612 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/conda-environment.yaml
+2024-05-13 22:10:41,691 DEBUG   HandlerThread:2753781 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-13 22:10:41,698 INFO    HandlerThread:2753781 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-13 22:10:41,709 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:10:41,709 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-13 22:10:41,710 DEBUG   SenderThread:2753781 [sender.py:send():378] send: files
+2024-05-13 22:10:41,710 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-13 22:10:41,866 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-13 22:10:41,866 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: python_packages
+2024-05-13 22:10:41,867 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:10:42,005 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:10:42,064 INFO    wandb-upload_0:2753781 [upload_job.py:push():130] Uploaded file /tmp/tmpv2jgailjwandb/kz0opuf4-wandb-metadata.json
+2024-05-13 22:10:42,077 DEBUG   SenderThread:2753781 [sender.py:send():378] send: telemetry
+2024-05-13 22:10:42,613 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_created():271] file/dir created: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-metadata.json
+2024-05-13 22:10:42,614 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_created():271] file/dir created: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/requirements.txt
+2024-05-13 22:10:43,615 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_created():271] file/dir created: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/output.log
+2024-05-13 22:10:44,644 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:10:44,646 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:10:44,646 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:10:44,653 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:10:45,618 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/output.log
+2024-05-13 22:10:45,618 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_created():271] file/dir created: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:10:46,654 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:10:47,621 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/output.log
+2024-05-13 22:10:51,655 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:10:55,975 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:10:55,976 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:10:55,976 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:10:55,981 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:10:56,631 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:10:56,867 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:10:56,867 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:10:57,010 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:02,011 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:07,016 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:07,067 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:11:07,106 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:11:07,106 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:11:07,110 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:11:07,640 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:11:07,641 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/config.yaml
+2024-05-13 22:11:11,868 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:11:11,868 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:11:12,997 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:17,998 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:18,137 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:11:18,137 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:11:18,138 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:11:18,142 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:11:18,649 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:11:23,143 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:26,868 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:11:26,868 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:11:28,990 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:29,264 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:11:29,264 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:11:29,265 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:11:29,269 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:11:29,661 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:11:34,270 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:35,768 DEBUG   SystemMonitor:2753781 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-13 22:11:35,770 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:11:39,771 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:40,421 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:11:40,421 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:11:40,422 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:11:40,424 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:11:40,670 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:11:41,869 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:11:41,869 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:11:44,962 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:49,962 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:51,672 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:11:51,673 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:11:51,673 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:11:51,676 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:11:51,677 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:11:55,676 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:11:56,869 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:11:56,869 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:12:00,983 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:02,919 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:12:02,919 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:12:02,920 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:12:02,922 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:12:03,685 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:12:05,771 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:12:06,771 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:11,772 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:11,869 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:12:11,869 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:12:14,290 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:12:14,290 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:12:14,290 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:12:14,294 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:12:14,693 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:12:17,295 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:22,296 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:25,510 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:12:25,511 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:12:25,511 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:12:25,513 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:12:25,705 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:12:26,869 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:12:26,870 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:12:27,982 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:32,982 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:35,772 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:12:37,051 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:12:37,052 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:12:37,052 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:12:37,054 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:12:37,713 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:12:38,055 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:41,870 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:12:41,870 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:12:43,969 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:48,635 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:12:48,636 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:12:48,636 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:12:48,639 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:12:48,721 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:12:49,639 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:54,640 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:12:56,870 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:12:56,870 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:12:59,984 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:00,336 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:13:00,337 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:13:00,337 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:13:00,340 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:13:00,729 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:13:05,341 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:05,772 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:13:10,774 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:11,777 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:13:11,777 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:13:11,777 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:13:11,782 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:13:11,870 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:13:11,870 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:13:12,737 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:13:15,951 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:20,952 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:22,884 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:13:22,885 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:13:22,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:13:22,887 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:13:23,749 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:13:26,870 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:13:26,871 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:26,871 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:13:32,000 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:34,388 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:13:34,388 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:13:34,389 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:13:34,391 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:13:34,756 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:13:35,773 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:13:37,774 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:41,870 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:13:41,871 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:13:42,944 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:45,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:13:45,894 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:13:45,894 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:13:45,897 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:13:46,765 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:13:48,898 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:53,899 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:13:56,870 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:13:56,871 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:13:57,558 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:13:57,559 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:13:57,559 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:13:57,562 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:13:57,772 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:13:59,563 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:04,564 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:05,774 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:14:09,185 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:14:09,186 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:14:09,186 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:14:09,190 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:14:09,780 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:14:10,190 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:11,870 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:14:11,871 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:14:16,001 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:20,754 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:14:20,755 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:14:20,755 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:14:20,759 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:14:20,789 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:14:21,759 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:26,760 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:26,871 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:14:26,871 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:14:32,049 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:32,391 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:14:32,391 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:14:32,392 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:14:32,395 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:14:32,797 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:14:35,775 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:14:37,776 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:41,871 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:14:41,871 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:14:42,956 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:43,984 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:14:43,985 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:14:43,985 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:14:43,989 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:14:44,806 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:14:47,990 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:52,991 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:14:55,132 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:14:55,132 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:14:55,132 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:14:55,135 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:14:55,813 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:14:56,871 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:14:56,872 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:14:58,039 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:03,040 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:05,776 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:15:06,744 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:15:06,744 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:15:06,745 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:15:06,747 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:15:06,822 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:15:08,749 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:11,872 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:15:11,872 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:15:13,973 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:18,085 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:15:18,086 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:15:18,087 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:15:18,090 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:15:18,831 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:15:19,090 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:24,091 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:26,872 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:15:26,872 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:15:29,433 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:15:29,434 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:15:29,434 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:15:29,434 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:29,437 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:15:29,843 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:15:34,438 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:35,778 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:15:39,779 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:40,797 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:15:40,798 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:15:40,798 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:15:40,801 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:15:40,850 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:15:41,872 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:15:41,872 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:15:45,008 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:50,009 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:52,167 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:15:52,167 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:15:52,168 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:15:52,170 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:15:52,859 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:15:55,171 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:15:56,873 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:15:56,873 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:16:00,960 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:03,725 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:16:03,726 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:16:03,726 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:16:03,730 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:16:03,867 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:16:05,778 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:16:06,779 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:11,780 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:11,873 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:16:11,873 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:16:15,502 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:16:15,503 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:16:15,503 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:16:15,506 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:16:15,876 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:16:17,507 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:22,507 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:26,873 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:16:26,874 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:16:27,460 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:16:27,461 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:16:27,461 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:16:27,464 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:16:27,886 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:16:28,464 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:33,465 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:35,779 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:16:38,780 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:39,447 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:16:39,448 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:16:39,448 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:16:39,451 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:16:39,894 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:16:41,874 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:16:41,874 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:16:44,005 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:49,005 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:51,108 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:16:51,108 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:16:51,109 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:16:51,111 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:16:51,903 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:16:54,112 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:16:56,875 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:16:56,875 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:16:59,974 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:02,945 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:17:02,946 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:17:02,946 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:17:02,949 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:17:03,911 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:17:05,780 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:17:05,782 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:10,782 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:11,875 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:17:11,875 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:17:14,945 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:17:14,946 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:17:14,946 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:17:14,949 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:17:15,921 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:17:15,949 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:20,950 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:25,951 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:26,875 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:17:26,875 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:17:27,001 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:17:27,002 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:17:27,002 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:17:27,005 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:17:27,931 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:17:31,006 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:35,781 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:17:36,782 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:38,931 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:17:38,932 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:17:38,932 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:17:38,935 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:17:38,938 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:17:41,874 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:41,875 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:17:41,875 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:17:47,039 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:51,020 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:17:51,021 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:17:51,021 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:17:51,024 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:17:51,947 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:17:53,025 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:17:56,875 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:17:56,875 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:17:58,939 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:02,877 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:18:02,878 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:18:02,878 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:18:02,881 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:18:02,955 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:18:04,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:05,782 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:18:10,783 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:11,876 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:18:11,876 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:18:14,553 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:18:14,554 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:18:14,554 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:18:14,557 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:18:14,964 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:18:16,558 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:21,559 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:26,559 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:26,597 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:18:26,598 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:18:26,598 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:18:26,601 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:18:26,875 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:18:26,875 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:18:26,977 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:18:31,941 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:35,783 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:18:37,784 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:38,675 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:18:38,676 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:18:38,676 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:18:38,680 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:18:38,986 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:18:41,876 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:18:41,876 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:18:43,037 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:48,038 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:50,729 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:18:50,730 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:18:50,730 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:18:50,733 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:18:51,160 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:18:53,734 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:18:56,876 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:18:56,876 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:18:58,956 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:02,811 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:19:02,812 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:19:02,812 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:19:02,815 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:19:03,169 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:19:04,816 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:05,787 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:19:10,788 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:11,876 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:19:11,876 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:19:14,720 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:19:14,721 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:19:14,721 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:19:14,724 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:19:15,178 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:19:16,725 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:21,726 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:26,493 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:19:26,494 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:19:26,494 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:19:26,497 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:19:26,876 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:26,876 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:19:26,877 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:19:27,191 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:19:31,999 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:35,785 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:19:37,797 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:38,517 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:19:38,518 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:19:38,518 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:19:38,522 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:19:39,201 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:19:41,876 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:19:41,877 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:19:43,031 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:48,032 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:50,594 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:19:50,595 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:19:50,595 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:19:50,598 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:19:51,210 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:19:53,599 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:19:56,877 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:19:56,878 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:19:58,981 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:02,559 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:20:02,560 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:20:02,560 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:20:02,563 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:20:03,218 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:20:04,563 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:05,786 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:20:09,787 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:11,877 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:20:11,878 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:20:14,612 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:20:14,613 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:20:14,613 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:20:14,617 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:20:15,227 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:20:15,617 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:20,618 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:25,619 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:26,597 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:20:26,598 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:20:26,598 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:20:26,601 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:20:26,877 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:20:26,878 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:20:27,240 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:20:30,964 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:35,787 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:20:36,788 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:38,698 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:20:38,699 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:20:38,699 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:20:38,702 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:20:39,248 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:20:41,878 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:20:41,878 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:20:42,032 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:47,032 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:50,274 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:20:50,275 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:20:50,275 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:20:50,279 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:20:51,259 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:20:52,280 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:20:56,878 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:20:56,879 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:20:57,971 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:01,881 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:21:01,882 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:21:01,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:21:01,885 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:21:02,267 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:21:03,886 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:05,788 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:21:09,789 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:11,878 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:21:11,878 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:21:13,448 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:21:13,448 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:21:13,449 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:21:13,452 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:21:14,276 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:21:15,452 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:20,453 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:25,095 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:21:25,096 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:21:25,096 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:21:25,100 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:21:25,288 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:21:26,101 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:26,879 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:21:26,879 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:21:32,000 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:35,789 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:21:37,126 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:21:37,127 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:21:37,127 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:21:37,127 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:37,129 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:21:37,297 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:21:41,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:21:41,880 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:21:43,034 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:48,034 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:49,067 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:21:49,068 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:21:49,068 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:21:49,071 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:21:49,307 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:21:53,072 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:21:56,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:21:56,880 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:21:58,966 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:01,105 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:22:01,106 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:22:01,106 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:22:01,111 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:22:01,315 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:22:04,112 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:05,790 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:22:09,791 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:11,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:22:11,880 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:22:13,155 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:22:13,156 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:22:13,156 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:22:13,159 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:22:13,324 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:22:15,160 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:20,161 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:24,984 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:22:24,985 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:22:24,985 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:22:24,988 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:22:25,337 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:22:25,989 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:26,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:22:26,881 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:22:30,998 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:35,791 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:22:36,792 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:36,923 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:22:36,923 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:22:36,924 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:22:36,926 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:22:37,345 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:22:41,879 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:41,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:22:41,881 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:22:46,991 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:49,013 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:22:49,014 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:22:49,014 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:22:49,017 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:22:49,355 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:22:52,017 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:22:56,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:22:56,881 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:22:57,975 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:00,930 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:23:00,931 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:23:00,931 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:23:00,933 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:23:01,364 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:23:03,934 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:05,792 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:23:09,793 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:11,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:23:11,881 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:23:12,719 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:23:12,720 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:23:12,720 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:23:12,722 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:23:13,372 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:23:15,723 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:20,724 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:24,589 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:23:24,590 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:23:24,590 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:23:24,594 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:23:25,383 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:23:26,595 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:26,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:23:26,881 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:23:31,983 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:35,793 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:23:36,643 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:23:36,644 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:23:36,644 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:23:36,647 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:23:37,391 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:23:37,647 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:41,881 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:23:41,881 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:23:42,949 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:47,950 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:48,637 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:23:48,638 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:23:48,638 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:23:48,641 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:23:49,401 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:23:53,642 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:23:56,881 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:23:56,881 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:23:58,974 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:00,716 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:24:00,716 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:24:00,716 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:24:00,719 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:24:01,409 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:24:04,720 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:05,794 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:24:09,795 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:11,881 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:24:11,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:24:12,790 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:24:12,791 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:24:12,791 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:24:12,794 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:24:13,418 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:24:15,795 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:20,796 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:24,829 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:24:24,830 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:24:24,830 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:24:24,833 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:24:25,429 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:24:25,833 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:26,881 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:24:26,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:24:30,972 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:35,795 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:24:36,796 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:36,942 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:24:36,943 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:24:36,943 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:24:36,946 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:24:37,437 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:24:41,881 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:41,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:24:41,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:24:47,046 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:49,035 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:24:49,036 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:24:49,036 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:24:49,039 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:24:49,447 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:24:53,040 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:24:56,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:24:56,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:24:59,034 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:01,019 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:25:01,020 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:25:01,020 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:25:01,024 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:25:01,457 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:25:05,025 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:05,796 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:25:10,797 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:11,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:25:11,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:25:12,988 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:25:12,989 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:25:12,989 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:25:12,991 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:25:13,467 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:25:15,992 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:20,993 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:24,575 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:25:24,576 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:25:24,576 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:25:24,579 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:25:25,478 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:25:26,580 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:26,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:25:26,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:25:31,999 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:35,797 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:25:36,588 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:25:36,588 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:25:36,589 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:25:36,592 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:25:37,488 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:25:37,592 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:41,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:25:41,882 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:25:42,944 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:47,945 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:48,547 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:25:48,548 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:25:48,548 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:25:48,551 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:25:49,499 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:25:53,552 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:25:56,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:25:56,883 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:25:59,050 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:00,458 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:26:00,459 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:26:00,459 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:26:00,462 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:26:00,507 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:26:04,463 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:05,798 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:26:09,799 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:11,882 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:26:11,883 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:26:12,486 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:26:12,487 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:26:12,487 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:26:12,490 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:26:12,516 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:26:15,491 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:20,492 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:24,025 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:26:24,026 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:26:24,026 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:26:24,029 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:26:24,526 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:26:26,030 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:26,883 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:26:26,883 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:26:31,953 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:35,799 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:26:36,031 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:26:36,032 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:26:36,032 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:26:36,034 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:26:36,536 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:26:37,035 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:41,883 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:26:41,883 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:26:43,025 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:47,875 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:26:47,876 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:26:47,876 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:26:47,880 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:26:48,546 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:26:48,880 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:53,881 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:56,883 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:26:56,883 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:26:59,042 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:26:59,454 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:26:59,455 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:26:59,456 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:26:59,458 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:26:59,554 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:27:04,459 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:05,800 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:27:09,801 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:11,491 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:27:11,492 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:27:11,492 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:27:11,495 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:27:11,563 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:27:11,884 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:27:11,884 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:27:15,024 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:20,025 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:23,471 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:27:23,472 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:27:23,472 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:27:23,475 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:27:23,574 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:27:25,476 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:26,884 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:27:26,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:27:30,971 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:35,543 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:27:35,544 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:27:35,544 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:27:35,547 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:27:35,583 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:27:35,804 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:27:36,805 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:41,806 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:41,884 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:27:41,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:27:47,039 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:47,534 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:27:47,535 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:27:47,535 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:27:47,538 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:27:47,594 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:27:52,539 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:56,884 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:27:56,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:27:57,955 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:27:59,540 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:27:59,541 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:27:59,542 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:27:59,545 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:27:59,708 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:28:03,546 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:05,802 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:28:08,803 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:11,499 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:28:11,500 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:28:11,500 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:28:11,505 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:28:11,719 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:28:11,885 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:28:11,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:28:14,038 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:19,039 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:23,499 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:28:23,500 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:28:23,500 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:28:23,504 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:28:23,730 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:28:24,504 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:26,885 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:28:26,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:28:30,027 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:35,028 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:35,603 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:28:35,604 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:28:35,604 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:28:35,607 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:28:35,739 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:28:35,803 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:28:40,804 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:41,885 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:28:41,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:28:46,028 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:47,515 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:28:47,516 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:28:47,516 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:28:47,520 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:28:47,750 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:28:51,521 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:56,522 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:28:56,885 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:28:56,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:28:59,596 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:28:59,597 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:28:59,597 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:28:59,600 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:28:59,758 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:29:01,601 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:05,804 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:29:06,805 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:11,734 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:29:11,734 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:29:11,735 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:29:11,738 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:29:11,768 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:29:11,884 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:11,885 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:29:11,885 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:29:16,985 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:21,986 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:23,709 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:29:23,710 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:29:23,710 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:29:23,715 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:29:23,780 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:29:26,886 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:29:26,886 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:29:26,989 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:31,989 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:35,728 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:29:35,729 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:29:35,729 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:29:35,732 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:29:35,789 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:29:35,805 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:29:37,806 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:41,886 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:29:41,886 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:29:43,031 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:47,710 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:29:47,711 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:29:47,711 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:29:47,714 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:29:47,800 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:29:48,714 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:53,715 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:56,886 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:29:56,886 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:29:58,953 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:29:59,448 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:29:59,448 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:29:59,449 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:29:59,453 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:29:59,809 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:30:04,454 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:05,806 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:30:09,807 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:11,094 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:30:11,095 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:30:11,095 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:30:11,098 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:30:11,819 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:30:11,886 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:30:11,886 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:30:14,955 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:19,955 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:23,224 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:30:23,225 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:30:23,225 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:30:23,228 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:30:23,831 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:30:25,228 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:26,886 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:30:26,887 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:30:30,977 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:35,295 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:30:35,296 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:30:35,296 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:30:35,301 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:30:35,807 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:30:35,841 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:30:36,808 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:41,808 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:41,886 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:30:41,886 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:30:47,008 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:47,416 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:30:47,417 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:30:47,417 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:30:47,420 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:30:47,852 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:30:52,422 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:56,887 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:30:56,887 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:30:58,005 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:30:59,387 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:30:59,388 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:30:59,389 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:30:59,392 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:30:59,863 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:31:03,393 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:05,808 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:31:08,809 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:10,936 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:31:10,937 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:31:10,938 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:31:10,941 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:31:11,873 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:31:11,887 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:31:11,887 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:31:13,965 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:18,966 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:23,009 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:31:23,010 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:31:23,010 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:31:23,013 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:31:23,884 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:31:24,013 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:26,887 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:31:26,887 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:31:29,028 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:34,029 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:34,831 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:31:34,832 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:31:34,832 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:31:34,835 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:31:34,893 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:31:35,809 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:31:39,810 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:41,887 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:31:41,887 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:31:44,998 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:46,633 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:31:46,634 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:31:46,634 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:31:46,637 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:31:46,904 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:31:50,638 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:55,639 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:31:56,888 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:31:56,888 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:31:58,742 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:31:58,743 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:31:58,743 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:31:58,746 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:31:58,914 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:32:00,747 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:05,747 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:05,810 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:32:10,811 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:10,834 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:32:10,835 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:32:10,835 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:32:10,838 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:32:10,923 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:32:11,887 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:32:11,888 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:32:16,022 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:21,023 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:22,932 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:32:22,933 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:32:22,933 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:32:22,936 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:32:23,936 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:32:26,887 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:26,888 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:32:26,888 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:32:31,948 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:35,025 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:32:35,026 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:32:35,026 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:32:35,029 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:32:35,811 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:32:35,944 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:32:37,812 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:41,888 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:32:41,888 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:32:43,018 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:47,163 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:32:47,163 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:32:47,164 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:32:47,166 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:32:47,955 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:32:48,167 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:53,167 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:56,888 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:32:56,889 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:32:59,003 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:32:59,092 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:32:59,093 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:32:59,093 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:32:59,096 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:32:59,964 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:33:04,097 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:05,812 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:33:09,813 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:10,600 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:33:10,601 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:33:10,601 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:33:10,605 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:33:10,980 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:33:11,888 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:33:11,889 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:33:14,970 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:19,971 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:22,263 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:33:22,264 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:33:22,264 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:33:22,267 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:33:22,985 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:33:25,268 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:26,889 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:33:26,889 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:33:31,000 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:34,134 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:33:34,135 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:33:34,135 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:33:34,138 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:33:34,993 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:33:35,813 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:33:36,814 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:41,814 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:41,889 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:33:41,889 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:33:46,066 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:33:46,066 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:33:46,067 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:33:46,070 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:33:47,005 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:33:47,070 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:52,071 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:56,889 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:33:56,889 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:33:58,042 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:33:58,165 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:33:58,165 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:33:58,166 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:33:58,169 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:33:59,014 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:34:03,170 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:05,814 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:34:08,815 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:09,967 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:34:09,968 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:34:09,968 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:34:09,971 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:34:10,022 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:34:11,889 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:34:11,890 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:34:14,013 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:19,014 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:21,647 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:34:21,648 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:34:21,648 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:34:21,651 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:34:22,034 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:34:24,652 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:26,889 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:34:26,889 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:34:29,976 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:33,148 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:34:33,148 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:34:33,149 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:34:33,152 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:34:34,044 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:34:35,152 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:35,815 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:34:40,816 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:41,889 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:34:41,890 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:34:44,636 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:34:44,637 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:34:44,637 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:34:44,640 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:34:45,053 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:34:46,640 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:51,641 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:56,133 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:34:56,134 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:34:56,134 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:34:56,138 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:34:56,889 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:34:56,890 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:34:56,890 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:34:57,062 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:35:01,955 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:05,816 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:35:07,759 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:35:07,760 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:35:07,760 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:35:07,760 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:07,763 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:35:08,072 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:35:11,890 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:35:11,890 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:35:12,983 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:17,983 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:19,621 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:35:19,622 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:35:19,622 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:35:19,625 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:35:20,084 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:35:23,626 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:26,890 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:35:26,890 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:35:29,000 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:31,726 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:35:31,727 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:35:31,727 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:35:31,730 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:35:32,094 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:35:34,731 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:35,817 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:35:39,818 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:41,890 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:35:41,890 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:35:43,670 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:35:43,671 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:35:43,671 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:35:43,674 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:35:44,104 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:35:45,675 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:50,676 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:55,309 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:35:55,310 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:35:55,310 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:35:55,318 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:35:56,115 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:35:56,318 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:35:56,890 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:35:56,890 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:36:02,055 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:05,818 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:36:06,878 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:36:06,879 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:36:06,879 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:36:06,883 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:36:07,124 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:36:07,883 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:11,890 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:36:11,891 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:36:12,971 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:17,972 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:18,797 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:36:18,797 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:36:18,798 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:36:18,800 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:36:19,135 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:36:23,801 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:26,891 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:36:26,891 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:36:29,058 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:30,501 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:36:30,506 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:36:30,506 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:36:30,509 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:36:31,146 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:36:34,510 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:35,819 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:36:39,820 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:41,890 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:36:41,891 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:36:42,023 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:36:42,025 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:36:42,025 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:36:42,028 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:36:42,155 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:36:45,029 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:50,030 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:53,549 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:36:53,550 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:36:53,550 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:36:53,553 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:36:54,164 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:36:55,554 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:36:56,891 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:36:56,891 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:37:01,023 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:05,199 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:37:05,200 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:37:05,200 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:37:05,203 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:37:05,820 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:37:06,174 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:37:06,820 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:11,821 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:11,891 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:37:11,901 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:37:16,710 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:37:16,711 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:37:16,711 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:37:16,715 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:37:17,183 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:37:17,715 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:22,716 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:26,891 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:37:26,892 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:37:28,013 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:28,286 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:37:28,287 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:37:28,287 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:37:28,291 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:37:29,193 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:37:33,292 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:35,821 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:37:38,822 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:39,928 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:37:39,929 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:37:39,929 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:37:39,932 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:37:40,202 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:37:41,892 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:37:41,892 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:37:43,975 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:48,976 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:51,590 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:37:51,591 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:37:51,591 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:37:51,594 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:37:52,213 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:37:54,595 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:37:56,892 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:37:56,892 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:37:59,983 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:03,109 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:38:03,110 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:38:03,110 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:38:03,113 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:38:03,222 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:38:05,114 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:05,822 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:38:10,823 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:11,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:38:11,893 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:38:14,828 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:38:14,828 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:38:14,828 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:38:14,831 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:38:15,233 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:38:15,832 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:20,833 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:25,833 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:26,439 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:38:26,440 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:38:26,440 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:38:26,443 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:38:26,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:38:26,893 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:38:27,245 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:38:31,060 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:35,823 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:38:36,823 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:38,092 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:38:38,093 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:38:38,093 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:38:38,096 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:38:38,254 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:38:41,891 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:41,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:38:41,893 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:38:46,994 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:49,784 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:38:49,785 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:38:49,785 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:38:49,788 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:38:50,265 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:38:52,789 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:38:56,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:38:56,893 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:38:57,954 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:01,426 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:39:01,427 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:39:01,427 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:39:01,430 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:39:02,275 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:39:03,431 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:05,824 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:39:08,825 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:11,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:39:11,893 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:39:13,270 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:39:13,271 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:39:13,272 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:39:13,275 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:39:13,285 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:39:14,276 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:19,277 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:24,278 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:25,393 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:39:25,393 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:39:25,394 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:39:25,396 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:39:26,298 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:39:26,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:39:26,894 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:39:30,039 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:35,040 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:35,825 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:39:37,510 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:39:37,511 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:39:37,511 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:39:37,514 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:39:38,307 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:39:40,515 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:41,893 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:39:41,894 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:39:46,055 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:49,591 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:39:49,592 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:39:49,592 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:39:49,595 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:39:50,319 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:39:51,596 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:56,596 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:39:56,894 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:39:56,894 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:40:01,584 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:40:01,585 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:40:01,585 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:40:01,588 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:40:02,328 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:40:02,589 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:05,826 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:40:07,827 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:11,895 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:40:11,895 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:40:13,021 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:13,656 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:40:13,656 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:40:13,657 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:40:13,659 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:40:14,338 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:40:18,660 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:23,661 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:25,798 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:40:25,799 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:40:25,799 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:40:25,802 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:40:26,573 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:40:26,895 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:40:26,895 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:40:29,044 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:34,045 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:35,827 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:40:37,942 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:40:37,942 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:40:37,943 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:40:37,946 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:40:38,583 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:40:39,946 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:41,895 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:40:41,895 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:40:44,958 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:49,849 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:40:49,849 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:40:49,850 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:40:49,852 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:40:50,594 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:40:50,853 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:55,854 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:40:56,895 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:40:56,895 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:41:01,023 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:01,899 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:41:01,900 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:41:01,900 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:41:01,903 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:41:02,604 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:41:05,828 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:41:06,828 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:11,829 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:11,895 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:41:11,895 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:41:13,950 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:41:13,951 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:41:13,951 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:41:13,954 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:41:14,614 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:41:16,955 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:21,956 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:25,907 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:41:25,908 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:41:25,908 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:41:25,912 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:41:26,625 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:41:26,895 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:41:26,896 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:41:27,058 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:32,059 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:35,829 DEBUG   SenderThread:2753781 [sender.py:send():378] send: stats
+2024-05-13 22:41:37,830 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:37,971 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:41:37,971 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:41:37,971 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:41:37,974 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:41:38,635 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:41:41,895 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:41:41,896 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:41:43,045 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:48,046 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:49,855 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 22:41:49,856 DEBUG   SenderThread:2753781 [sender.py:send():378] send: history
+2024-05-13 22:41:49,856 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 22:41:49,860 INFO    SenderThread:2753781 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 22:41:50,644 INFO    Thread-12 :2753781 [dir_watcher.py:_on_file_modified():288] file/dir modified: /fs/cml-projects/MARL/MARL_Coalitions_Curriculum/epymarl/wandb/run-20240513_221035-pukqxbnb/files/wandb-summary.json
+2024-05-13 22:41:53,861 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 22:41:56,896 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 22:41:56,896 DEBUG   SenderThread:2753781 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 22:41:58,952 DEBUG   HandlerThread:2753781 [handler.py:handle_request():158] handle_request: status_report
