@@ -33,15 +33,4 @@ pip install protobuf==3.20.*
 
 torch_scatter is installed separately as it requires torch to be already installed
 
-
-EPyMARL is  an extension of [PyMARL](https://github.com/oxwhirl/pymarl), and includes
-- Additional algorithms (IA2C, IPPO, MADDPG, MAA2C and MAPPO)
-- Support for [Gym](https://github.com/openai/gym) environments (on top of the existing SMAC support)
-- Option for no-parameter sharing between agents (original PyMARL only allowed for parameter sharing)
-- Flexibility with extra implementation details (e.g. hard/soft updates, reward standarization, and more)
-- Consistency of implementations between different algorithms (fair comparisons)
-
-See our blog post here: https://agents.inf.ed.ac.uk/blog/epymarl/
-
-
-## Update as of *15th July 2023*!
+Shell scripts under code_scripts folder can be used to run the Multi-Agent Reinforcement Learning algorithms with Domain Randomization codes on Level Based Foraging.
